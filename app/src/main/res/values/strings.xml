@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">Admin tienda</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="anterior">Anterior</string>
+    <string name="txt_longProductName">Este producto tiene un nombre grande que no cabe en una sola linea</string>
+    <string name="noOfferPrice">99999</string>
+    <string name="unavailableTag">No disponible</string>
+
+
+    <!-- activity_facturas [BEGIN] -->
+    <string name="noBillsMessage">No hay facturas que mostrar</string>
+    <!-- activity_facturas [END] -->
+
+
+    <!-- activity_bill_selector [BEGIN] -->
+    <string name="noPickedUpBills">Facturas recogidas</string>
+    <string name="pickedUpBills">Facturas no recogidas</string>
+    <!-- activity_bill_selector [END] -->
+
+
+    <!-- card_captioned_info_bills [BEGIN] -->
+
+    <string name="billNameField">Nombre de compra: </string>
+    <string name="billNameValue">EJEMPLO: Compra de manzanas</string>
+
+    <string name="billPriceField">Costo de la compra: </string>
+    <string name="billPriceValue">$ 999.99</string>
+
+    <string name="billDateField">Fecha: </string>
+    <string name="billDateValue">EJEMPLO: 20/12/2020</string>
+
+    <string name="billHourField">Hora: </string>
+    <string name="billHourValue">EJEMPLO: 21:45:12</string>
+
+    <string name="billPurchaseMethodField">Método de compra: </string>
+    <string name="billPurchaseMethodValue">EJEMPLO: Solicitar repartidor</string>
+
+    <string name="billTotalItemsField">Productos totales</string>
+    <string name="billTotalItemsValue">EJEMPLO: 13</string>
+
+    <string name="billPickedUpField">Entregado/retirado: </string>
+    <string name="billPickedUpValue">EJEMPLO: No</string>
+    <!-- card_captioned_info_bills [END] -->
+
+
+
+    <!-- card_captioned_purchased_trolley [BEGIN] -->
+    <string name="productNameField">Nombre: </string>
+    <string name="productNameValue">EJEMPLO: Manzana con un nombre muy grande que no cabe en este pequeño cuadro, en el cual se coloca el nombre de los productos</string>
+
+    <string name="productCostField">Costo: </string>
+    <string name="productCostValue">EJEMPLO: $ 999.99 </string>
+
+    <string name="ProductQuantityField">Cantidad: </string>
+    <string name="ProductQuantityValue">EJEMPLO: 5</string>
+
+    <string name="productUnitField">Unidad: </string>
+    <string name="productUnitValue">EJEMPLO: Unidad</string>
+    <!-- card_captioned_purchased_trolley [END] -->
+
+
+
+    <!-- activity_billSelected [BEGIN] -->
+    <string name="upgradeSelectedBill">Guardar cambios</string>
+    <string name="markAsPickedUp">Marcar como retirado:</string>
+    <string name="No">No</string>
+    <string name="Yes">Si</string>
+    <string name="deleteBill">Eliminar factura</string>
+    <string name="billTitle">Factura</string>
+    <string name="productSubTitle">Productos: </string>
+    <string name="hintPurchaseName">Ejemplo: Compra de 1 par de zapatos</string>
+    <string name="noPurchaseName">Si no crea un nombre de compra, se generará uno automaticamente</string>
+    <string name="purchaseOption1">Pagar y retirar compra personalmente</string>
+    <string name="purchaseOption2">Enviar a tercero, repartidor u otra presona</string>
+    <string name="purchaseOption3">Solicitar repartidor al negocio (precio del repartidor no incluido en la compra)</string>
+
+    <string name="longNameBill">Compra de par de zapatos comprados el dia de ayer en la tienda. La compra se la retiro en una moto</string>
+    <string name="date">21/12/2020</string>
+    <string name="hour">21:45:56</string>
+
+    <string name="billUserNameField">Nombre del usuario: </string>
+    <string name="billUserNameValue">Hermelindo Federico Fernandez Tinbanquiza</string>
+    <string name="billUserEmailField">E-mail: </string>
+    <string name="billUserEmail">HermelindoF@e-mail.com</string>
+    <string name="billUserPhoneField">Teléfono: </string>
+    <string name="billUserPhone">0969646451</string>
+    <string name="billUserLocationField">Ubicación: </string>
+    <string name="billUserLocation">Federico Garcia Lorca y Eugenio Espejo</string>
+
+
+    <string name="billInfo">Información de productos</string>
+    <string name="billUserInfo">Datos del usuario</string>
+
+    <string name="openLocation">Abrir ubicación</string>
+    <!-- activity_billSelected [END] -->
+
+
+
+
+    <!-- Notification [BEGIN] -->
+        <!--  manifest-->
+        <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <!-- Notification [END] -->
+
+
+
+
+    <!-- MainActivity[BEGIN]-->
+        <string name="channel_name" translatable="false">fcm_default_channel</string>
+        <string name="channel_description" translatable="false">Channel available for purchase notifications</string>
+    <!-- MainActivity [END] -->
+
+
+    <!-- Menu[BEGIN]-->
+    <string name="home">home</string>
+    <!-- Menu[END]-->
+</resources>

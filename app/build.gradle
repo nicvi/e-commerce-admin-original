@@ -1,0 +1,164 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "sdcn.project.ecommerce_d"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    /// =================== VIEWS CARDVIEW ===================== [BEGIN]
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    /// =================== VIEWS CARDVIEW ===================== [END]
+
+
+
+    /// =================== Firebase ===================== [BEGIN]
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+    implementation 'com.google.firebase:firebase-firestore:22.1.0'
+    implementation 'com.google.android.material:material:1.3.0'
+
+    // FirebaseUI Storage only
+    implementation 'com.firebaseui:firebase-ui-storage:6.2.0'
+    /// =================== Firebase ===================== [END]
+
+
+    // implementation, error: Execution failed for task ':app:lintVitalRelease'. \n > Lint found fatal errors while assembling a release target.
+    //implementation 'commons-validator:commons-validator:1.6'
+
+
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    implementation 'com.android.support:support-annotations:28.0.0'
+
+
+
+
+    // =================== Material Components for Android =================== [BEGIN]
+    implementation 'com.google.android.material:material:1.3'
+    // =================== Material Components for Android =================== [END]
+
+
+
+    // =================== GLIDE =================== [BEGIN]
+    /*
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    */
+
+    /*
+    implementation ("com.github.bumptech.glide:glide:4.11.0") {
+        exclude group: "com.android.support"
+    }
+    annotationProcessor 'androidx.annotation:annotation:1.2.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    implementation ("com.github.bumptech.glide:glide:4.11.0@aar") {
+        transitive = true
+    }
+     */
+
+    //annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0' //bumped from 4.8.0 to 4.9.0
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // =================== GLIDE =================== [END]
+
+
+    // =================== KOTLIN =================== [BEGIN]
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.2.1'
+    implementation "org.jetbrains.anko:anko-commons:0.10.1"
+
+    // =================== KOTLIN =================== [END]
+
+
+    // =================== PAGING 3 =================== [BEGIN]
+    def paging_version = "3.0.0-alpha13"
+
+    implementation "androidx.paging:paging-runtime:$paging_version"
+
+    // alternatively - without Android dependencies for tests
+    testImplementation "androidx.paging:paging-common:$paging_version"
+
+    // optional - RxJava2 support
+    implementation "androidx.paging:paging-rxjava2:$paging_version"
+
+    // optional - RxJava3 support
+    implementation "androidx.paging:paging-rxjava3:$paging_version"
+
+    // optional - Guava ListenableFuture support
+    implementation "androidx.paging:paging-guava:$paging_version"
+
+    // Jetpack Compose Integration
+    implementation "androidx.paging:paging-compose:1.0.0-alpha07"
+    // =================== PAGING 3 =================== [END]
+
+
+    // =================== LOADING STATE =================== [BEGIN]
+    // Image loading library support
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    // =================== LOADING STATE =================== [END]
+
+
+
+    // =================== google maps =================== [BEGIN]
+    // google maps (Build your own current place)
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    // =================== google maps =================== [END]
+
+
+
+    // =================== Firebase Cloud Messaging =================== [BEGIN]
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:26.5.0')
+
+    // Declare the dependencies for the Firebase Cloud Messaging and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // =================== FCM =================== [BEGIN]
+
+}
+repositories {
+    mavenCentral()
+    google() // You were missing this, added for glide
+}
