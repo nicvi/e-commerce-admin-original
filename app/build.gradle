@@ -1,6 +1,6 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 30
@@ -54,7 +54,6 @@ dependencies {
 
     // implementation, error: Execution failed for task ':app:lintVitalRelease'. \n > Lint found fatal errors while assembling a release target.
     //implementation 'commons-validator:commons-validator:1.6'
-
 
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
