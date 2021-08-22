@@ -1,4 +1,4 @@
-package sdcn.project.ecommerce_d;
+package sdcn.project.ecommerce_admin_original;
 
 
 import android.graphics.Color;
@@ -15,7 +15,7 @@ import androidx.paging.PagingDataAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import sdcn.project.ecommerce_d.R;
+import sdcn.project.ecommerce_admin_original.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;

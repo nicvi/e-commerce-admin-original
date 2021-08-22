@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="sdcn.project.ecommerce_d.BillSelectorActivity">
+    tools:context="sdcn.project.ecommerce_admin_original.BillSelectorActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_bill_selector"

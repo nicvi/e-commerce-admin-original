@@ -1,4 +1,4 @@
-package sdcn.project.ecommerce_d;
+package sdcn.project.ecommerce_admin_original;
 
 import androidx.paging.PagingDataAdapter;
 
@@ -20,7 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import sdcn.project.ecommerce_d.R;
+import sdcn.project.ecommerce_admin_original.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

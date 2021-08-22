@@ -1,4 +1,4 @@
-package sdcn.project.ecommerce_d;
+package sdcn.project.ecommerce_admin_original;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,7 +24,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import sdcn.project.ecommerce_d.R;
+import sdcn.project.ecommerce_admin_original.R;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;

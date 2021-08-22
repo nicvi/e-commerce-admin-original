@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="sdcn.project.ecommerce_d.createCategoryActivity">
+    tools:context="sdcn.project.ecommerce_admin_original.createCategoryActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_create_category"

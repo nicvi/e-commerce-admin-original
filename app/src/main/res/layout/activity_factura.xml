@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="sdcn.project.ecommerce_d.FacturaActivity"
+    tools:context="sdcn.project.ecommerce_admin_original.FacturaActivity"
     android:id="@+id/linearLayout_onFacturaActivity">
 
     <androidx.appcompat.widget.Toolbar

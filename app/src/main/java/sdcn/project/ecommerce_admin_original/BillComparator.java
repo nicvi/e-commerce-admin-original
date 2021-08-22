@@ -1,4 +1,4 @@
-package sdcn.project.ecommerce_d;
+package sdcn.project.ecommerce_admin_original;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;

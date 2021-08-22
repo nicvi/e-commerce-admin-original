@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sdcn.project.ecommerce_d">
+    package="sdcn.project.ecommerce_admin_original">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -13,14 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="sdcn.project.ecommerce_d.BillSelectedActivity" />
-        <activity android:name="sdcn.project.ecommerce_d.BillSelectorActivity" />
-        <activity android:name="sdcn.project.ecommerce_d.FacturaActivity" />
-        <activity android:name="sdcn.project.ecommerce_d.EditProductActivity" />
-        <activity android:name="sdcn.project.ecommerce_d.createCategoryActivity" />
-        <activity android:name="sdcn.project.ecommerce_d.crear_Producto_Activity" />
-        <activity android:name="sdcn.project.ecommerce_d.ProductActivity" />
-        <activity android:name="sdcn.project.ecommerce_d.MainActivity">
+        <activity android:name="sdcn.project.ecommerce_admin_original.BillSelectedActivity" />
+        <activity android:name="sdcn.project.ecommerce_admin_original.BillSelectorActivity" />
+        <activity android:name="sdcn.project.ecommerce_admin_original.FacturaActivity" />
+        <activity android:name="sdcn.project.ecommerce_admin_original.EditProductActivity" />
+        <activity android:name="sdcn.project.ecommerce_admin_original.createCategoryActivity" />
+        <activity android:name="sdcn.project.ecommerce_admin_original.crear_Producto_Activity" />
+        <activity android:name="sdcn.project.ecommerce_admin_original.ProductActivity" />
+        <activity android:name="sdcn.project.ecommerce_admin_original.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,19 +37,11 @@
         Maybe not needed
         -->
         <service
-            android:name="sdcn.project.ecommerce_d.MyFirebaseMessagingService"
+            android:name="sdcn.project.ecommerce_admin_original.MyFirebaseMessagingService"
             android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-            </intent-filter>
-        </service>
-
-
-        <service
-            android:name="sdcn.project.ecommerce_d.MyFirebaseInstanceIDService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
         <!--

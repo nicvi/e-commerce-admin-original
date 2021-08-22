@@ -1,4 +1,4 @@
-package sdcn.project.ecommerce_d;
+package sdcn.project.ecommerce_admin_original;
 
 
 import androidx.annotation.NonNull;
@@ -7,7 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import sdcn.project.ecommerce_d.R;
+import sdcn.project.ecommerce_admin_original.R;
 import com.google.android.gms.maps.model.LatLng;
 
 import android.app.ProgressDialog;

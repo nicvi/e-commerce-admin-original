@@ -1,4 +1,4 @@
-package sdcn.project.ecommerce_d;
+package sdcn.project.ecommerce_admin_original;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import sdcn.project.ecommerce_d.R;
+import sdcn.project.ecommerce_admin_original.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -29,6 +29,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.util.Objects;
+
+// Import these Performance Monitoring classes at the top of your `.java` file
+import com.google.firebase.perf.FirebasePerformance;
+import com.google.firebase.perf.metrics.Trace;
 
 // TODO This activity show the products in the recyclerView
 
@@ -74,6 +78,11 @@ public class ProductActivity extends AppCompatActivity {
     long totalProducts;
     DocumentSnapshot lastVisibleNext, lastVisiblePrevious;
     // [____________|| Variables ||____________] [END-->]
+
+
+    Trace myTrace = FirebasePerformance.getInstance().newTrace("test_trace");
+    Trace myTrace2 = FirebasePerformance.getInstance().newTrace("test_trace_pics");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,6 +139,7 @@ public class ProductActivity extends AppCompatActivity {
 
     public void getProductsNumber()
     {
+        myTrace.start();
         DocumentReference docRef = db
                 .collection("CantidadProductos")
                 .document("metaData");
@@ -145,6 +155,7 @@ public class ProductActivity extends AppCompatActivity {
                         totalProducts = document.getLong("totalProductos");
                         System.out.println("totalProducts: "+totalProducts);
                         // Do something
+                        myTrace.stop();
                         paginateFirstQuery();
                     }
                     else{
@@ -424,6 +435,7 @@ public class ProductActivity extends AppCompatActivity {
             QuerySnapshot firestoneProductsArray,
             int productsPerPage)
     {
+        myTrace2.start();
         if (totalProducts>0)
         {
             productArray= new Producto[productsPerPage];
@@ -454,6 +466,7 @@ public class ProductActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT
             ).show();
         }
+        myTrace2.stop();
     }
 
 

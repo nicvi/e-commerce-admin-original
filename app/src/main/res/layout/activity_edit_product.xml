@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context="sdcn.project.ecommerce_d.EditProductActivity">
+    tools:context="sdcn.project.ecommerce_admin_original.EditProductActivity">
 
 
     <LinearLayout
